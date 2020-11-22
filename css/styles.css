@@ -11,7 +11,7 @@ body {
 .container {
   margin: 0 auto;
   width: 80%;
-  max-width: 1400px;
+  max-width: 1200px;
 }
 
 /* Hero section */
@@ -19,12 +19,11 @@ body {
 .hero {
   background-color: #083947;
   color: white;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 30px;
+  padding-bottom: 40px;
 }
 
 .hero__wrapper {
-  /* background-color: tomato; */
   width: 50%;
 }
 
@@ -37,4 +36,38 @@ body {
   padding: .75rem 1.5rem;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+@media screen and (max-width: 550px) {
+  .hero__wrapper {
+    width: 100%;
+  }
+
+  .cta {
+    text-align: center;
+    display: block;
+    background-color: tomato;
+    margin: 0 20%;
+  }
+}
+
+
+/* mid-section */
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 550px) {
+  .flex {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.feat {
+  width: 25%;
+  min-width: 150px;
+  text-align: center;
 }
