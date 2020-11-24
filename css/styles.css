@@ -44,10 +44,10 @@ body {
   }
 
   .cta {
-    text-align: center;
-    display: block;
     background-color: tomato;
+    display: block;
     margin: 0 20%;
+    text-align: center;
   }
 }
 
@@ -59,6 +59,11 @@ body {
   justify-content: space-between;
 }
 
+.mid-section {
+  padding-bottom: 40px;
+  padding-top: 40px;
+}
+
 @media screen and (max-width: 550px) {
   .flex {
     flex-wrap: wrap;
@@ -67,7 +72,28 @@ body {
 }
 
 .feat {
-  width: 25%;
   min-width: 150px;
   text-align: center;
+  width: 25%;
 }
+
+
+/* bottom section */
+
+.bottom-section {
+  background-color: #106e7a;
+  color: white;
+  padding-bottom: 40px;
+  padding-top: 40px;
+  text-align: center;
+  
+}
+
+.flex2 {
+  display: flex;
+  justify-content: space-around;
+}
+
+.feat4, .feat5 {
+  width: 40%;
+} 
