@@ -25,7 +25,65 @@ body {
 .container {
   margin: 0 auto;
   width: 80%;
-  max-width: 1200px;
+  max-width: 1000px;
+}
+
+/* nav bar */
+
+header {
+  background-color: #008080;
+  padding: 1.5em 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-list {
+  align-items: center;
+  color: white;
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  /* justify-content: center; */
+}
+
+.nav-item {
+  text-transform: uppercase;
+}
+
+/* aligning to the container edges */
+.nav-item + .nav-item, .signup {
+  margin-left: 3vw;
+}
+
+ul li:hover {
+  cursor: pointer;
+  animation: menu-anim .3s;
+  
+}
+
+@keyframes menu-anim {
+  from {
+    color: white;
+
+  }
+  to {
+    color: orangered;
+  }
+}
+
+.signup {
+  background-color: white;
+  border-radius: 1em;
+  color: #008080;
+  padding: .5em .8em;
+}
+
+.signup:hover {
+  box-shadow: 0 0 .4em black;
 }
 
 /* Hero section */
@@ -74,6 +132,11 @@ body {
   padding: .75rem 1.5rem;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+.cta:hover {
+  animation: menu-anim .3s;
+  color: orangered;
 }
 
 @media screen and (max-width: 550px) {
