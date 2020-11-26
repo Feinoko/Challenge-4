@@ -38,10 +38,17 @@ header {
 .nav {
   display: flex;
   justify-content: space-between;
+  flex-grow: 1;
 }
 
 .logo-img {
   display: inline-block;
+  padding-right: 2vw;
+}
+
+.flex-logo {
+  display: flex;
+  /* justify-content: space-between; */
 }
 
 .nav-list {
