@@ -40,6 +40,10 @@ header {
   justify-content: space-between;
 }
 
+.logo-img {
+  display: inline-block;
+}
+
 .nav-list {
   align-items: center;
   color: white;
@@ -48,6 +52,15 @@ header {
   margin: 0;
   padding: 0;
   /* justify-content: center; */
+}
+
+.nav-list--logo {
+  align-items: center;
+  color: white;
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .nav-item {
